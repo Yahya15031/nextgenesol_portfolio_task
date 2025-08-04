@@ -104,8 +104,8 @@ body {
     .skill {
       padding: 0.5rem 1rem;
       background: #fafafa;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
+      border: 1px solid #a89b9b;
+      border-radius: 8px;  
       font-size: 0.9rem;
       transition: all 0.2s ease;
       cursor: default;
@@ -205,4 +205,45 @@ body {
 
 .contact-icons img:hover {
   transform: scale(1.1);
+}
+
+.education-section {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.education-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.education-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.degree-info {
+  flex: 1;
+}
+
+.degree-title {
+  font-weight: bold;
+  color: #222;
+}
+
+.university-name {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.education-meta .year {
+  color: #666;
+  font-size: 0.9rem;
 }

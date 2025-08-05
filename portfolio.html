@@ -11,44 +11,36 @@
 
 <body>
 
+<section class="intro-section">
+  <div class="intro-left">
+    <h1>Hi, I’m Yahya</h1>
+    <h3>Full Stack Developer Intern</h3>
+    <p class="exp">1+ Year Experience</p>
+    <p class="bio">
+      I’m a Computer Science student and a curious builder, learning to turn ideas into real, working software. Currently interning as a Full Stack Developer, I love working with both front-end and back-end tools and figuring things out along the way. I enjoy building clean, useful apps and exploring technologies that make development smoother and smarter.
+    </p>
+    <a href="https://calendly.com/toyahyashahid/30min" class="contact-button">
+      <img src="media/calendly_logo.webp" alt="email icon" class="email-icon">
+      Book a Call
+    </a>
+  </div>
 
+  <div class="intro-right">
+    <img src="yahyapic.jpg" alt="Yahya's Picture" class="intro-image">
+  </div>
+</section>
   
 
   <div class="center-content">
-          <div>
-                 <div class="paragraph-image-calender-container">
-                    <h2>Portfolio</h2>
-                    <div class="paragraph-image-container">
-                        <div class="paragraph-container">
-                           <p style="font-family:'Courier New', Courier, monospace;font-family: monospace;">
-                            <br>
-                            I’m a Computer Science student and a curious builder, learning to turn ideas into real, working software.
-
-                            Currently interning as a Full Stack Developer, I love working with both front-end and back-end tools and figuring things out along the way.
-
-                             I enjoy building clean, useful apps and exploring technologies that make development smoother and smarter.
-                           </p>
-                        </div>
-                             <div class="image-container">
-                                <img src="yahyapic.jpg" alt="yahya's pic" srcset="">
-                             </div>
-                        </div>
-                        <hr>
-                        <div class="calender">
-                  <a href="https://calendly.com/toyahyashahid/30min" class="book-a-call-link">📅 Book a call</a>
-                     </div>
-                </div>
-              <div>
-                <img src="" alt="">
-              </div>
-          </div>
+         
     <h2 id="skills">Skills</h2>
     
 
     <div class="tabs">
-      <button class="tab active" data-tab="software">💻 Software</button>
-      <button class="tab" data-tab="expertise">⚙️ Expertise</button>
-      <button class="tab" data-tab="language">🌐 Language</button>
+      <button class="tab active" data-tab="software"> Software</button><hr>
+      <button class="tab" data-tab="expertise"> Expertise</button><hr>
+      <button class="tab" data-tab="language"> Language</button>
+      <hr>
     </div>
 
     <div id="software" class="tab-content active">
@@ -74,7 +66,6 @@
 
 <section style="padding: 2rem; display: flex; flex-direction: column; align-items: center;">
   <h2 style="font-size: 1.5rem; margin-bottom: 1rem; text-align: center;">Skill Sets</h2>
-
   <!-- Programming Languages & Technologies -->
   <button class="dropdown-toggle" onclick="toggleDropdown('prog-skills')" style="margin-bottom: 0.5rem;">▶ Programming Languages & Technologies</button>
   <ul id="prog-skills" class="skill-dropdown" style="width: 100%; max-width: 500px; margin: 0 auto;">
@@ -135,7 +126,76 @@
   </div>
 </section>
 
-    <h2 id="project">work sample</h2>
+   <section class="projects-section">
+  <h2 style="text-align: center;"> Projects</h2><hr>
+
+  <!-- Group: University Projects -->
+  <div class="project-group">
+    <h3 style="text-align: center;"> MAJU – BS Computer Science</h3>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h4>Text Steganography</h4>
+        <a href="https://github.com/Yahya15031/text_steganography_2024" target="_blank">GitHub ↗</a>
+      </div>
+      <p>Built a text steganography system in Assembly language (x86) as a semester project. Focused on hiding messages inside text files using bit-level encoding.</p>
+      <span class="role">Role: Developer</span>
+      <span class="date">2024</span>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h4>Sudoku Solver</h4>
+        <a href="https://github.com/Yahya15031/Sudoku-Solver-DSA" target="_blank">GitHub ↗</a>
+      </div>
+      <p>Implemented a Sudoku solver using backtracking algorithm. Efficiently navigates complex grid logic to solve puzzles.</p>
+      <span class="role">Role: Developer</span>
+      <span class="date">2024</span>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h4>Bank Management System</h4>
+      </div>
+      <p>Built in C# with SQL Server integration. Supports account creation, transaction logging, and data validation.</p>
+      <span class="role">Role: Developer</span>
+      <span class="date">2023</span>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h4>Matrix Calculator</h4>
+      </div>
+      <p>Developed a matrix calculator in C#, enabling addition, subtraction, and multiplication of matrices.</p>
+      <span class="role">Role: Developer</span>
+      <span class="date">2023</span>
+    </div>
+  </div>
+
+  <!-- Group: Personal / Volunteer / External -->
+  <div class="project-group">
+    <h3>External Initiatives</h3>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h4>TEDxMAJU</h4>
+      </div>
+      <p>Licensee and organizer of TEDxMAJU. Handled speaker selection, marketing, logistics, and built a volunteer team.</p>
+      <span class="role">Role: Lead Organizer</span>
+      <span class="date">2024 – Present</span>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h4>Ration Distribution System</h4>
+      </div>
+      <p>Digitally registered 300+ citizens nightly during Sindh Govt’s ration drive. Focused on streamlining entry and reducing duplication.</p>
+      <span class="role">Role: Volunteer Tech Support</span>
+      <span class="date">2020</span>
+    </div>
+  </div>
+</section>
+
    
 
 

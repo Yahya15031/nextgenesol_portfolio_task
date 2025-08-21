@@ -204,11 +204,16 @@
 </section>
 
    
+<div id="quote-box" class="quote-container">
+  Loading inspirational quote...
+</div>
+
 
 
     <div id="contact" class="contact-section">
   <h2>Contact</h2><hr style="height: 2px; background-color: #000; width: 200px; margin: 0 auto;">
   <br>
+  
   <div class="contact-icons">
     <a href="mailto:toyahyashahid@gmail.com" class="email-link">
       <img src="media/gmail-logo.png" alt="Gmail">
@@ -253,6 +258,28 @@
     section.classList.toggle('open');
     button.textContent = section.classList.contains('open') ? "▼ " + button.textContent.slice(2) : "▶ " + button.textContent.slice(2);
   }
+
+  // Fetch a random quote from the API and display it
+  window.addEventListener('DOMContentLoaded', () => {
+    fetch('https://api.quotable.io/random')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then(data => {
+        const quote = `"${data.content}" — ${data.author}`;
+        document.getElementById('quote-box').textContent = quote;
+      })
+      .catch(error => {
+        console.error("Fetch error:", error);
+        document.getElementById('quote-box').textContent = "Couldn't load quote. Please try again later.";
+      });
+  });
+
+
+
 
 </script>
 <!-- ROUGH STUFF

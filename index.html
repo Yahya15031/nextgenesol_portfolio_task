@@ -204,8 +204,8 @@
 </section>
 
    
-<div id="quote-box" class="quote-container">
-  Loading inspirational quote...
+<div id="quote-box" style="margin-top: 20px; font-style: italic; color: #444;">
+  Loading quote...
 </div>
 
 
@@ -259,24 +259,23 @@
     button.textContent = section.classList.contains('open') ? "▼ " + button.textContent.slice(2) : "▶ " + button.textContent.slice(2);
   }
 
-  // Fetch a random quote from the API and display it
+ 
   window.addEventListener('DOMContentLoaded', () => {
     fetch('https://api.quotable.io/random')
       .then(response => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
+        if (!response.ok) throw new Error("Network error");
         return response.json();
       })
       .then(data => {
-        const quote = `"${data.content}" — ${data.author}`;
-        document.getElementById('quote-box').textContent = quote;
+        document.getElementById('quote-box').textContent = `"${data.content}" — ${data.author}`;
       })
-      .catch(error => {
-        console.error("Fetch error:", error);
+      .catch(err => {
+        console.error("API Fetch Error:", err);
         document.getElementById('quote-box').textContent = "Couldn't load quote. Please try again later.";
       });
   });
+
+
 
 
 
